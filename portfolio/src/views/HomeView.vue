@@ -3,45 +3,48 @@
     <div class="flex-container">
     
     <div class="item1">
+
       <div class="draw">
         /*drawing will go here*/
       </div>
+
       <div class="welcomeMessage">
         <p>Welcome to my corner of the internet</p>
       </div> 
+
       <div class="Linkbtn">
         <div class="q-pa-md q-gutter-sm">
-          <q-btn href="https://www.linkedin.com/in/melbeshb/" color="brown-5" label="Img" />
-          <q-btn href="https://www.linkedin.com/in/melbeshb/" style="background: #D8815C; color: white" label="LinkedIn" />
-        </div>
+          <!-- LinkedIn Button -->
+          <q-btn class="button" href="https://www.linkedin.com/in/melbeshb/" color="brown-5" style="width:20%;font-size: 2em;font-weight: 600" label="Img" />
+          <q-btn class="button" href="https://www.linkedin.com/in/melbeshb/" style="font-weight: 600; background: #D8815C; color: white; width:75%; font-size: 2em;" label="LinkedIn"/>
 
-        <div class="q-pa-md q-gutter-sm">
-          <q-btn href="https://github.com/maryam-elbeshbishy" color="brown-5" label="Img" />
-          <q-btn href="https://github.com/maryam-elbeshbishy" style="background: #D8815C; color: white" label="GitHub" />
-        </div>
+          <!-- GitHub -->
+          <q-btn class="button" href="https://github.com/maryam-elbeshbishy" color="brown-5" style="width:20%;font-size: 2em;font-weight: 600" label="Img" />
+          <q-btn class="button" href="https://github.com/maryam-elbeshbishy" style="font-weight: 600; background: #D8815C; color: white; width:75%; font-size: 2em;" label="GitHub" />
 
-        <div class="q-pa-md q-gutter-sm">
-          <q-btn color="brown-5" label="Img" />
-          <q-btn style="background: #D8815C; color: white" label="Resume" />
-        </div>
-      
-        <div class="q-pa-md q-gutter-sm">
-          <q-btn href="mailto: maryam.elbeshbishy@ryerson.ca" color="brown-5" label="Img" />
-          <q-btn href="mailto: maryam.elbeshbishy@ryerson.ca" style="background: #D8815C; color: white" label="Email" />
+          <!-- Email -->
+          <q-btn class="button" href="mailto: maryam.elbeshbishy@ryerson.ca" color="brown-5" style="width:20%;font-size: 2em;font-weight: 600" label="Img" />
+          <q-btn class="button" href="mailto: maryam.elbeshbishy@ryerson.ca" style="font-weight: 600; background: #D8815C; color: white; width:75%; font-size: 2em;" label="Email" />
+
+          <!-- Resume -->
+          <q-btn class="button" href="" color="brown-5" style="width:20%;font-size: 2em;font-weight: 600" label="Img" />
+          <q-btn class="button" href="" style="font-weight: 600; background: #D8815C; color: white; width:75%; font-size: 2em;" label="Resume" />
         </div>
         
       </div>
     </div>
     <div class="item2">
       <div class="q-pa-md q-gutter-sm">
-          <q-btn color="brown-5" label="About Me" to="/about"/>
-          <q-btn color="brown-5" label="Projects" to="/projects"/>
-          <q-btn color="brown-5" label="Art Portfolio" to="/art"/>
-          <q-btn color="brown-5" label="DevLogs" to="/devlogs"/>
+          <q-btn class="button" style="font-weight: 600; background: #683227; color: white; width:24%; font-size: 1.8em;" label="About Me" to="/about"/>
+          <q-btn class="button" style="font-weight: 600; background: #683227; color: white; width:24%; font-size: 1.8em;" label="Projects" to="/projects"/>
+          <q-btn class="button" style="font-weight: 600; background: #683227; color: white; width:24%; font-size: 1.8em;" label="Art Portfolio" to="/art"/>
+          <q-btn class="button" style="font-weight: 600; background: #683227; color: white; width:24%; font-size: 1.8em;" label="DevLogs" to="/devlogs"/>
       </div>
 
       <div class="Name">
-        <h1>Maryam Elbeshbishy</h1>
+        <p style="font-family:'Playfair Display';color: #683227; font-size:5em ">Maryam Elbeshbishy</p>
+        <p style="font-weight:600; font-family:'Dosis', sans-serif; color: #683227;font-size:3em ">Computer Science</p>
+        <p style="font-weight:600; font-family:'Dosis', sans-serif; color: #683227;font-size:3em">Toronto Metropolitan University</p>
       </div>
 
       <div class="Drawing2">
@@ -67,10 +70,21 @@ export default {
 }
 </script>
 <style>
-  q-btn{
-    font-size: 7rem;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:wght@600&display=swap');
+  .button{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
   }
 
+  .Name{
+    border-radius: 25px;
+    background-color:#D8815C ;
+    padding: 1em;
+    padding-left: 5em;
+    text-align:left
+
+  }
   .flex-container {
 
     display: flex;
@@ -84,7 +98,7 @@ export default {
 
     background-color: #EBC9A4;
     height: 100%;
-    padding: 15px;
+    padding: 3em;
     gap: 5px;
 
   }
@@ -92,7 +106,7 @@ export default {
   .flex-container > div{
 
     border-radius: 5px;
-    padding: 50px;
+    padding: 3em;
   }
 
 
@@ -104,7 +118,7 @@ export default {
 			
   .item2 { 
     /* flex:3 1 auto; */
-    flex: 5 1 0;
+    flex: 4 1 0;
     
   }
 </style>
