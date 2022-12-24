@@ -25,7 +25,7 @@
         <q-btn class="nav_button" color="button_nav-1" text-color="white" style="font-weight: 600; width:24%; font-size: 1.8em;" label="DevLogs" to="/devlogs"/>
       </div>
       
-      <div class="name" style="background-color:#ca5665 ;color:rgb(82, 0, 30)">
+      <div class="name" style="background-color:#b58d58 ;color:#2a1801">
         <p color="white" style="font-family:'Playfair Display'; font-size:2rem ">A Little About Me...</p>
         <p color="white" style="font-weight:600; font-family:'Dosis'; sans-serif; font-size:2em">
         Tech Related
@@ -60,10 +60,10 @@
 
 <style>
 .bg-button_icon-1 {
-  background: #56131a !important;
+  background: #762f38 !important;
 }
 .bg-button_nav-1 {
-  background: #981f37 !important;
+  background: #6b481a !important;
 }
 .container-3 {
   display: flex; /* create a flex container */

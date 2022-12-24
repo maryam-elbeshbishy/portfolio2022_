@@ -65,7 +65,7 @@
 
 /*quasar specified colors*/
 .bg-button_col {
-  background: #d57962 !important;
+  background: #ad5641 !important;
 }
 .bg-button_icon {
   background: #7aa78a !important;
@@ -130,9 +130,7 @@
 
 .item-1 {
   flex: 1; /* 1/3 of the container's width */
-  margin: 2vw;
-  
-  
+  margin: 2vw;  
 }
 
 .item-2 {

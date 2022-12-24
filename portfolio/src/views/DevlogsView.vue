@@ -1,27 +1,48 @@
 <template>
-  <div class="container-2">
-    <div class="item">
-      <q-btn class="nav_button" color="button_icon" text-color="white" style="font-weight: 600; width:25%; font-size: 2.5em; margin-right: 20vh;font-family: 'Playfair Display', serif;" label="Art Portfolio"/>
-      <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:15%; font-size: 1.8em;" label="Home" to="/"/>
-      <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:15%; font-size: 1.8em;" label="Projects" to="/projects"/>
-      <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:15%; font-size: 1.8em;" label="About Me" to="/about"/>
-      <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:15%; font-size: 1.8em;" label="Art Portfolio" to="/art"/>
+  <div class="container-5">
+    <div class="item-3">
+      <div>
+        <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
+      </div>
+      <div class="title_side" style="color:rgb(0, 22, 2) ">
+        Dev Logs
+      </div>
+      <div>
+        <div>
+          <q-btn class="btn" color="button_nav-4" text-color="white" style="font-weight: 600; width: 80%; font-size: 1.8em; margin-top: 2vh;" label="Home" to="/"/>
+        </div>
+        <div>
+          <q-btn class="btn" color="button_nav-4" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="Art Portfolio" to="/art"/>
+        </div>
+        <div>
+        <q-btn class="btn" color="button_nav-4" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="About Me" to="/about"/>
+        </div>
+        <div>
+          <q-btn class="btn" color="button_nav-4" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="Projects" to="/projects"/>
+        </div>
+      </div>
     </div>
 
-    <div class="item">
-      <figure class="item" v-for="item in items" :key="item.id">
-            <!-- <img class="projImg" :src="require(../assets/ProjectsImg/${item.image})" alt="PROJECT IMAGE"/> -->
+    <div class="item-4">
+      <div class="under_construction">
+        <h2>Under Construction!<br> Come back soon :)</h2>
+      </div>
+      <!-- <div class="item" v-for="item in items" :key="item.id" style="color:black">
+        <q-card class="my-card">
+            <img src="https://cdn.quasar.dev/img/mountains.jpg">
 
-            <figcaption class="caption">
-                <h2> 
-                    <b>{{item.title}}</b>
-                </h2>
-                <h4>{{item.tools}}</h4>
-                <p>
-                {{item.description}}</p>
+            <q-card-section>
+              <div class="text-h6">{{item.title}}</div>
+              <div class="text-subtitle2">{{item.date}}</div>
+              <div class="text-subtitle2">{{item.tools}}</div>
 
-            </figcaption>
-        </figure>
+            </q-card-section>
+
+            <q-card-section class="q-pt-none">
+              {{item.description}}
+            </q-card-section>
+          </q-card>
+      </div> -->
     </div>
   </div>
   </template>
@@ -40,16 +61,31 @@ export default {
 </script>
 
 <style>
-.container-4 {
+.bg-button_nav-4 {
+  background: #06430c !important;
+}
+.container-5 {
   display: flex;
-  flex-direction: column;
-  
 
   /*changes all text to white*/
   color:rgb(212, 212, 212);
-  background-color: rgb(22, 0, 8);
+  background-color: rgb(0, 22, 2);
 }
 .item{
   margin: 4vh;
+}
+.under_construction{
+  font-family: 'Playfair Display', serif;
+  font-size: 6vh;
+  margin-top: 15vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(212, 212, 212);
+  color:rgb(6, 43, 0);
+  border-radius: 10px;
+  width: 80%;
+  padding: 2vh;
+  text-align: center;
 }
 </style>
