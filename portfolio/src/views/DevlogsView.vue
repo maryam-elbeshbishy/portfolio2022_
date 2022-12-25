@@ -71,9 +71,7 @@ export default {
   color:rgb(212, 212, 212);
   background-color: rgb(0, 22, 2);
 }
-.item{
-  margin: 4vh;
-}
+
 .under_construction{
   font-family: 'Playfair Display', serif;
   font-size: 6vh;

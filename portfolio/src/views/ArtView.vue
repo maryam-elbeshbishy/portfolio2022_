@@ -4,7 +4,7 @@
 
     <div class="item-3">
       <div>
-        <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
+        <img src="..\img\art_port.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
       </div>
       <div class="title_side">
         Art Portfolio
@@ -26,17 +26,14 @@
     </div>
 
     <div class="item-4">
-      <div class="item" v-for="item in items" :key="item.id" style="color:black">
-        <q-card class="my-card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+      <div class="item" v-for="item in items" :key="item.id" style="color:darkslategray">
+        <q-card class="my-card" style="font-family:'Dosis'">
+          <!-- <img :src="require(`../img/art/${item.image}`)" > -->
 
             <q-card-section>
-              <div class="text-h6">{{item.title}}</div>
-              <div class="text-subtitle2">{{item.tools}}</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{item.description}}
+              <div class="text-h5"><b>{{item.title}}</b></div>
+              <div class="text-h6">{{item.tools}}</div>
+              <div class="text-h7">{{item.date}}</div>
             </q-card-section>
           </q-card>
       </div>
@@ -91,6 +88,7 @@ export default {
     display: inline-block;
     text-align: center;
     width:43%;
+    margin: 4vh;
 }
 .title_side{
   font-family: 'Playfair Display', serif;
