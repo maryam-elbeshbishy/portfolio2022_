@@ -1,55 +1,53 @@
+<!-- COLOR NEEDS TO BE CONFIGURED -->
 <template>
-  <div class="container">
-    <div class="item-1">
-      <div>
-        <img src="..\img\TL.jpg" style="width:27vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;" alt="ART NOT LOADED">
+  <div class="row bg-background_color" style="height:100vh">
+    <div class="columns col-3"> 
+      <div class="q-mr-md q-ml-md q-mt-sm">
+        <q-img src="..\img\top_left_home.jpg"
+        spinner-color="white"
+        style="border-radius: 10px;" alt="ART NOT LOADED"/>
       </div>
-      <div class="welcome">
-        Welcome to my corner of the internet!
-      </div>
-
-      <!-- BUTTONS FOR SOCIALS -->
-      <div class="btn">
-        <q-btn class="button" color="button_icon" style="width:20%;font-size: 3.5vh;font-weight: 600" href="https://www.linkedin.com/in/melbeshb/" label="Img" />
-        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="https://www.linkedin.com/in/melbeshb/" label="LinkedIn" /> 
-      </div>
-
-      <div class="btn">
-        <q-btn class="button" color="button_icon" style="width:20%;font-size: 3.5vh;font-weight: 600" href="https://github.com/maryam-elbeshbishy" label="Img" />
-        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="https://github.com/maryam-elbeshbishy" label="GitHub" />
+        
+      <div class="q-ma-md text-center">
+        <q-card-section class="welcome_message bg-welcome_message text-welcome_message">
+          <div class="text-h4">Welcome to my corner of the internet!</div>
+        </q-card-section>
       </div>
 
-      <div class="btn">
-        <q-btn class="button" color="button_icon" style="width:20%;font-size: 3.5vh;font-weight: 600" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Img" />
-        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Email" />
+      <div class="link_btn text-center">
+        <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-link_btn text-link_btn"  style="width:90%;" href="https://www.linkedin.com/in/melbeshb/" label="LinkedIn" /> 
+        <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-link_btn text-link_btn"  style="width:90%;" href="https://github.com/maryam-elbeshbishy" label="GitHub" /> 
+        <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-link_btn text-link_btn"  style="width:90%;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Email" /> 
+        <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-link_btn text-link_btn"  style="width:90%;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Resume" /> 
+        <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-link_btn text-link_btn"  style="width:90%;" href="https://www.instagram.com/marilambb_draws/" label="Art Insta" /> 
       </div>
+  </div>
 
-      <!-- HAVE TO CHANGE THE HREF TO GO TO A PDF OF RESUME -->
-      <div class="btn">
-        <q-btn class="button" color="button_icon" style="width:20%;font-size: 3.5vh;font-weight: 600" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Img" />
-        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Resume" />
-      </div>
-
+  <div class="columns col-8"> 
+    <div class="nav_btn text-center">
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="About Me" to="/about"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Tech Portfolio" to="/projects"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Art Portfolio" to="/art"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Dev Logs" to="/devlogs"/> 
     </div>
 
-    <div class="item-2">
-      <div>
-        <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:24%; font-size: 1.8em;" label="About Me" to="/about"/>
-        <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:24%; font-size: 1.8em;" label="Projects" to="/projects"/>
-        <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:24%; font-size: 1.8em;" label="Art Portfolio" to="/art"/>
-        <q-btn class="nav_button" color="button_nav" text-color="white" style="font-weight: 600; width:24%; font-size: 1.8em;" label="DevLogs" to="/devlogs"/>
-      </div>
-      <div class="name">
-        <p color="white" style="font-family:'Playfair Display'; font-size:4rem ">Maryam Elbeshbishy</p>
-        <p color="white" style="font-weight:600; font-family:'Dosis'; sans-serif; font-size:2em ">Computer Science - Toronto Metropolitan University</p>
-        <p color="white" style="font-weight:600; font-family:'Dosis'; sans-serif; font-size:1.5em">Hi! As you may have seen my name is Maryam, Im currently working as a Research Assistant
+    <div>
+      <q-card-section class="q-ma-lg bg-about_message text-about_message" style="border-radius: 10px">
+          <div class="text-h3 q-ma-lg" style="font-family:'Playfair Display';">Maryam Elbeshbishy</div>
+          <div class="text-h4 q-ma-lg" style="font-family:'Dosis';">Computer Science - Toronto Metropolitan University</div>
+          <div class="text-h5 q-ma-lg" style="font-family:'Dosis';">Hi! As you may have seen my name is Maryam, Im currently working as a Research Assistant
         at Ryerson University, I am quite passionate about Data Science and XR Development, currently taking courses in both to expand my knowledge! Check the rest of my website for more
-      information. <br> PS. Any art on this website was created by me!</p>
-      </div>
-      <div>
-        <img src="..\img\Img_BR.jpg" style="width:57vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;" alt="ART NOT LOADED">
-      </div>
+      information. <br> PS. Any art on this website was created by me!</div>
+      </q-card-section>
     </div>
+
+    <div class="q-ma-lg">
+        <q-img src="..\img\bottom_right_home.jpg"
+        spinner-color="white"
+        style="border-radius: 10px;" alt="ART NOT LOADED"/>
+      </div>
+    
+  </div>
 </div>
 
 </template>
@@ -63,6 +61,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:wght@600&display=swap');
 
+/* background color */
+.bg-background_color{
+  background:#051301 !important;
+}
+/* column styling */
+.columns{
+  margin: 2vw;
+}
+/* welcome message */
+.welcome_message{
+  font-family: Playfair-Display;
+  border-radius: 10px;
+}
+.bg-welcome_message{
+  background: rgb(0, 43, 35) !important; 
+}
+.text-welcome_message{
+  color: #f1e2ff !important;
+}
+
+/* link buttons */
+.link_btn{
+  font-family: Dosis;
+  font-weight: 600;
+}
+.bg-link_btn{
+  background: #ad5641 !important
+}
+.text-link_btn{
+  color: #fff1ee !important
+}
+
+/* nav buttons */
+.nav_btn{
+  font-family: Dosis;
+  font-weight: 600;
+}
+.bg-nav_btn{
+  background: #2fa212 !important
+}
+.text-nav_btn{
+  color: #daf0d0 !important
+}
+/* About Me Blurb */
+.bg-about_message{
+  background: rgb(113, 14, 109) !important; 
+}
+.text-about_message{
+  color: #f1e2ff !important;
+}
+
+/* OLD CODE */
 /*quasar specified colors*/
 .bg-button_col {
   background: #ad5641 !important;
@@ -72,70 +122,6 @@
 }
 .bg-button_nav {
   background: #43176e !important;
-}
-/* navigation buttons */
-.nav_button{
-    font-family: 'Dosis', sans-serif;
-    font-weight: 600;
-    margin:.5vh
-  }
-/* Information about me */
-.name{
-    border-radius: 25px;
-    background-color:#367880 ;
-    padding: 3vh;
-    padding-left: 10vh;
-    margin: 3vh;
-    text-align:left
-  }
-/* button spacing */
-.btn{
-  font-family: 'Dosis', sans-serif;
-  font-weight: 600;
-  padding: 1vh;
-  margin-left: 4vh;
-  margin-right: 4vh
-}
-/* welcome message */
-.welcome{
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(212, 212, 212);
-  color:rgb(0, 43, 35);
-  border-radius: 10px;
-  height: 15vh;
-  width:27vw;
-  padding: 2vh;
-  text-align: center;
-  
-}
-.button{
-  margin-left: 1vh
-}
-/*flex boxes*/
-.container {
-  display: flex; /* create a flex container */
-  /*have the div span the whole screen + change background color */
-  position:fixed;
-  width:100%;
-  height:100%;
-  /*changes all text to white*/
-  color:rgb(212, 212, 212);
-  background-color: rgb(12, 0, 22);
-}
-
-.item-1 {
-  flex: 1; /* 1/3 of the container's width */
-  margin: 2vw;  
-}
-
-.item-2 {
-  flex: 2; /* 2/3 of the container's width */
-  margin: 2vw;
 }
 
 

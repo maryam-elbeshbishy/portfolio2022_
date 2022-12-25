@@ -2,7 +2,7 @@
   <div class="container-5">
     <div class="item-3">
       <div>
-        <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
+        <!-- <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED"> -->
       </div>
       <div class="title_side" style="color:rgb(0, 22, 2) ">
         Dev Logs
