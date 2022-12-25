@@ -4,9 +4,9 @@
 
     <div class="item-3">
       <div>
-        <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
+        <img src="..\img\proj.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
       </div>
-      <div class="title_side" style="color:#1b2486 ">
+      <div class="title_side" style="color:rgb(0, 27, 41) ">
         Projects
       </div>
       <div>
@@ -26,19 +26,19 @@
     </div>
 
     <div class="item-4">
-      <div class="item" v-for="item in items" :key="item.id" style="color:black">
-        <q-card class="my-card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
-
-            <q-card-section>
-              <div class="text-h6">{{item.title}}</div>
-              <div class="text-subtitle2">{{item.date}}</div>
-              <div class="text-subtitle2">{{item.tools}}</div>
+      <div class="item-p" v-for="item in items" :key="item.id" style="color:rgb(0, 27, 41)">
+        <q-card class="my-card" style="font-family:'Dosis'">
+            <img :src="require(`../img/proj/${item.image}`)" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto">
+            <q-card-section style="background: #b4d9e9">
+              <div class="text-h5"><b>{{item.title}}</b></div>
+              <div class="text-h6">{{item.tools}}</div>
+              <div class="text-h6">{{item.date}}</div>
+              
 
             </q-card-section>
 
-            <q-card-section class="q-pt-none">
-              {{item.description}}
+            <q-card-section class="q-pt-none" style="background: #b4d9e9">
+                {{item.description}}
             </q-card-section>
           </q-card>
       </div>
@@ -55,9 +55,13 @@
 import projItems from '../databases/projects.json'
 export default {
     name: 'ProjectsPage',
+    methods: {
+
+    },
     data() {
         return {
             items: projItems,
+          
         }
     }
 }
@@ -65,7 +69,7 @@ export default {
 
 <style>
 .bg-button_nav-3 {
-  background: #1b2486 !important;
+  background: #1b6686  !important;
 }
 .container-2 {
   display: flex; /* create a flex container */
@@ -73,7 +77,7 @@ export default {
   /*changes all text to white*/
   height:100%;
   color:rgb(212, 212, 212);
-  background-color: rgb(6, 0, 41);
+  background-color: rgb(0, 27, 41);
 }
 .item-3 {
   flex:1;
@@ -85,10 +89,11 @@ export default {
   flex: 4;
   overflow-y: auto;
 }
-.item {
+.item-p {
     vertical-align: top;
     display: inline-block;
     text-align: center;
     width:43%;
+    margin: 4vh;
 }
 </style>

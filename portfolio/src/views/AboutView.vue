@@ -32,8 +32,8 @@
       </p>
         <p color="white" style="font-weight:600; font-family:'Dosis'; sans-serif; font-size:1.5em">
         Currently, my biggest passion is learning about <b>virtual reality</b>, which the driving force in me taking the leap to 
-        <b>learn unity and C# through</b>> a course held by Circuit Stream, to learn how to <b>create XR experiences</b>, ranging from AR mobile applications to creating
-        a simple game in VR
+        <b>learn unity and C# </b> through a course held by Circuit Stream, to learn how to <b>create XR experiences</b>, ranging from AR mobile applications to creating
+        a simple game in VR.
         <br>
         Along with that, I am quite passionate about learning more technologies related to Data Science. After having learnt many libraries that 
         are useful in Python, I would like to learn technologies that deal with big data!
@@ -43,7 +43,7 @@
         Hobbies
       </p>
         <p color="white" style="font-weight:600; font-family:'Dosis'; sans-serif; font-size:1.5em">
-        Recently, I've picked up many hobbies that I feel fullfill my life and ultimately help regulate my attention span. These hobbies include <b>drawing</b>> (mainly 
+        Recently, I've picked up many hobbies that I feel fullfill my life and ultimately help regulate my attention span. These hobbies include <b>drawing</b> (mainly 
         digital, using procreate), <b>reading, playing piano and solving rubicks cubes</b>! Playing piano would have to be my favorite hobby at the moment, since it has 
         been a life long dream, and after a few years of contemplating whether it was worth I've decided to self teach myself!  
         <br>

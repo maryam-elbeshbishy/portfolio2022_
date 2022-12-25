@@ -21,7 +21,7 @@
 
       <div class="btn">
         <q-btn class="button" color="button_icon" style="width:20%;font-size: 3.5vh;font-weight: 600" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Img" />
-        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="GitHub" />
+        <q-btn class="button" color="button_col" text-color="white" style="font-weight: 600; width:70%; font-size: 3.5vh;" href="mailto: maryam.elbeshbishy@ryerson.ca" label="Email" />
       </div>
 
       <!-- HAVE TO CHANGE THE HREF TO GO TO A PDF OF RESUME -->
@@ -71,7 +71,7 @@
   background: #7aa78a !important;
 }
 .bg-button_nav {
-  background: #53297f !important;
+  background: #43176e !important;
 }
 /* navigation buttons */
 .nav_button{
