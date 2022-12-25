@@ -111,18 +111,4 @@
 .text-about_message{
   color: #f1e2ff !important;
 }
-
-/* OLD CODE */
-/*quasar specified colors*/
-.bg-button_col {
-  background: #ad5641 !important;
-}
-.bg-button_icon {
-  background: #7aa78a !important;
-}
-.bg-button_nav {
-  background: #43176e !important;
-}
-
-
 </style>
