@@ -1,6 +1,6 @@
 <!-- COLOR NEEDS TO BE CONFIGURED -->
 <template>
-  <div class="row bg-background_color" style="height:100vh">
+  <div class="row bg-bg_home" style="height:100vh">
     <div class="columns col-3"> 
       <div class="q-mr-md q-ml-md q-mt-sm">
         <q-img src="..\img\top_left_home.jpg"
@@ -45,7 +45,7 @@
         <q-img src="..\img\bottom_right_home.jpg"
         spinner-color="white"
         style="border-radius: 10px;" alt="ART NOT LOADED"/>
-      </div>
+    </div>
     
   </div>
 </div>
@@ -58,11 +58,11 @@
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:wght@600&display=swap');
 
 /* background color */
-.bg-background_color{
+.bg-bg_home{
   background:#051301 !important;
 }
 /* column styling */
@@ -83,7 +83,7 @@
 
 /* link buttons */
 .link_btn{
-  font-family: Dosis;
+  font-family: Nunito;
   font-weight: 600;
 }
 .bg-link_btn{
@@ -95,7 +95,7 @@
 
 /* nav buttons */
 .nav_btn{
-  font-family: Dosis;
+  font-family: Nunito;
   font-weight: 600;
 }
 .bg-nav_btn{

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Data Quest Python Basics", 
+        "image": "No_Image_Available.jpg", 
+        "skills": "Numpy, Pandas"
+    },
+    {
+        "id": 2,
+        "title": "Data Quest", 
+        "image": "No_Image_Available.jpg", 
+        "skills": "Matplotlib"
+    }
+]

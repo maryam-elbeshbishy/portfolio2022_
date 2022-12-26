@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Research Assisstant (Data Science)",
+        "place": "Toronto Metropolitan University",
+        "tools": "Python, Sumo Simluation Software",
+        "skills": "Pandas, Cleaning Data, Analyzing Data, Excel",
+        "date": "May 2021 - December 2021",
+        "description": "This is the website you are viewing at the moment! This website was created using VUE and was a way for me to learn a front end framework, as well as creating a way to showcase my porfolio. Concepts such as using components, Javascript scripts, displaying data from JSON files used."
+    },
+    {
+        "id": 2,
+        "title": "Research Assisstant (Web Development)",
+        "place": "Toronto Metropolitan University",
+        "tools": "Word Press, VUE 3, ",
+        "skills": "HTML, CSS, Figma",
+        "date": "January 2023 - Present",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "title": "Research Assisstant",
+        "place": "Kore Meta Inc",
+        "tools": "Unity, C#, Photon Fusion",
+        "skills": "XR Development, Multiplayer Netowrks",
+        "date": "January 2023 - Present",
+        "description": ""
+    }
+]
