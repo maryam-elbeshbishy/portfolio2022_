@@ -26,9 +26,9 @@
   <div class="columns col-8"> 
     <div class="nav_btn text-center">
       <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="About Me" to="/about"/> 
-      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Tech Portfolio" to="/projects"/> 
-      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Art Portfolio" to="/art"/> 
-      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Dev Logs" to="/devlogs"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Work Exp" to="/workExp"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Projects" to="/projects"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn text-nav_btn"  style="width:23%;" label="Art " to="/art"/> 
     </div>
 
     <div>
@@ -63,7 +63,7 @@
 
 /* background color */
 .bg-bg_home{
-  background:#051301 !important;
+  background: rgb(18, 126, 106) !important;
 }
 /* column styling */
 .columns{
@@ -75,10 +75,10 @@
   border-radius: 10px;
 }
 .bg-welcome_message{
-  background: rgb(0, 43, 35) !important; 
+  background: rgb(175, 105, 69) !important; 
 }
 .text-welcome_message{
-  color: #f1e2ff !important;
+  color: #ffffff !important;
 }
 
 /* link buttons */
@@ -87,10 +87,10 @@
   font-weight: 600;
 }
 .bg-link_btn{
-  background: #ad5641 !important
+  background: #b5c49d !important
 }
 .text-link_btn{
-  color: #fff1ee !important
+  color: rgb(6, 52, 44) !important
 }
 
 /* nav buttons */
@@ -99,16 +99,16 @@
   font-weight: 600;
 }
 .bg-nav_btn{
-  background: #2fa212 !important
+  background: rgb(6, 72, 61) !important
 }
 .text-nav_btn{
-  color: #daf0d0 !important
+  color: #fffbf9 !important
 }
 /* About Me Blurb */
 .bg-about_message{
-  background: rgb(113, 14, 109) !important; 
+  background: rgb(158, 83, 45) !important; 
 }
 .text-about_message{
-  color: #f1e2ff !important;
+  color: #ffffff !important;
 }
 </style>

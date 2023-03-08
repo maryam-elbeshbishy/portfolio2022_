@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ProjectView from '../views/ProjectsView.vue'
 import ArtView from '../views/ArtView.vue'
-import DevlogsView from '../views/DevlogsView.vue'
+import WorkExpView from '../views/WorkExpView.vue'
 const routes = [
   {
     path: '/',
@@ -29,9 +29,9 @@ const routes = [
     component: ArtView
   },
   {
-    path: '/devlogs',
-    name: 'devlogs',
-    component: DevlogsView
+    path: '/workexp',
+    name: 'workExp',
+    component: WorkExpView
   }
 ]
 

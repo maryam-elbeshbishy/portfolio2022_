@@ -21,8 +21,9 @@
       <div class="link_btn text-center">
       <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Home" to="/"/> 
       <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="About Me" to="/about"/>
-      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Tech Portfolio" to="/projects"/> 
-      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Dev Logs" to="/devlogs"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Work Exp" to="/workExp"/>
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Projects" to="/projects"/> 
+       
       </div>
     </div>
 
