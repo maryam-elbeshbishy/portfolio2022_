@@ -1,52 +1,55 @@
 <template>
-  <body style="overflow: hidden; height: 100vh;">
-  <div class="container-4">
-
-    <div class="item-3">
-      <div>
-        <img src="..\img\TL.jpg" style="width:20vw; border-radius: 10px;display: block;margin-left: auto; margin-right: auto;margin-top:3vh; margin-bottom:3vh" alt="ART NOT LOADED">
+<div class="row bg-bg_art" style="height:100vh">
+    <div class="columns col-3"> 
+      <div class="q-mr-md q-ml-md q-mt-sm">
+        <q-img src="..\img\art_port.jpg"
+        spinner-color="white"
+        style="border-radius: 10px;" alt="ART NOT LOADED"/>
       </div>
-      <div class="title_side">
-        Art Portfolio
+        
+      <div class="q-ma-md text-center">
+        <q-card-section class="welcome_message bg-art_title text-art_title">
+          <div class="text-h5"> Art Portfolio </div>
+        </q-card-section>
+        <q-card-section class="q-mt-md info_message bg-art_message text-art_message">
+          <div class="text-body1"> Here you can find all of my art! I enjoy isometric art, but I am also trying to branch out to other styles. My
+            main medium is digital, in Procreate. <br> <b>Find me on instagram @marilambb_draws</b>
+          </div>
+        </q-card-section>
       </div>
-      <div>
-        <div>
-          <q-btn class="btn" color="button_nav-2" text-color="white" style="font-weight: 600; width: 80%; font-size: 1.8em; margin-top: 2vh;" label="Home" to="/"/>
-        </div>
-        <div>
-          <q-btn class="btn" color="button_nav-2" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="Projects" to="/projects"/>
-        </div>
-        <div>
-        <q-btn class="btn" color="button_nav-2" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="About Me" to="/about"/>
-        </div>
-        <div>
-          <q-btn class="btn" color="button_nav-2" text-color="white" style="font-weight: 600; width:80%; font-size: 1.8em;margin-top: 2vh" label="DevLogs" to="/devlogs"/>
-        </div>
-      </div>
-    </div>
 
-    <div class="item-4">
-      <div class="item" v-for="item in items" :key="item.id" style="color:black">
-        <q-card class="my-card">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
-
-            <q-card-section>
-              <div class="text-h6">{{item.title}}</div>
-              <div class="text-subtitle2">{{item.tools}}</div>
-            </q-card-section>
-
-            <q-card-section class="q-pt-none">
-              {{item.description}}
-            </q-card-section>
-          </q-card>
+      <div class="link_btn text-center">
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Home" to="/"/> 
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="About Me" to="/about"/>
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Work Exp" to="/workExp"/>
+      <q-btn class="q-ma-sm button text-h5 text-weight-bold bg-nav_btn_art text-nav_btn_art"  style="width:90%;" label="Projects" to="/projects"/> 
+       
       </div>
     </div>
 
-  </div>
+    <div class="columns col-8">
+      <q-scroll-area 
+        :thumb-style="thumbStyle"
+        :bar-style="barStyle"
+        :visible="true"
+        style="height: 90vh; max-width: 97%;">
+        <!-- Projects -->
+        <div class="q-pa-md row items-start q-gutter-md text-proj_card_text" >
+            <q-card v-for="item in items" :key="item.id" class="my-card proj_card">
+              <img :src="require(`../img/art/${item.image}`)">
 
-</body>
+              <q-card-section class="title bg-proj_card_title">
+                  <div class="text-h6 "><b>{{item.title}}</b></div>
+                  <div class="text-body2 items">{{item.tools}}</div>
+                  <div class="text-body2 items">{{item.date}}</div>
+              </q-card-section>
+            </q-card>
+          </div>
 
-  </template>
+      </q-scroll-area>
+    </div>
+</div>
+</template>
 
 
 <script>
@@ -63,49 +66,52 @@ export default {
 
 <style>
 
-.bg-button_icon-1 {
-  background: #56131a !important;
+.bg-bg_art{
+  background: #22432e !important;
 }
-.bg-button_nav-2 {
-  background: #8b5314 !important;
+
+/* nav buttons */
+.bg-nav_btn_art{
+  background: #1242a2 !important;
 }
-.container-4 {
-  display: flex; /* create a flex container */
-  /*have the div span the whole screen + change background color */
-  /*changes all text to white*/
-  height:100%;
-  color:rgb(212, 212, 212);
-  background-color: rgb(33, 24, 2);
+.text-nav_btn_art{
+  color: #d0dcf0 !important;
 }
-.item-3 {
-  flex:1;
-  margin: 2vw;
-  
+
+/* Title Left hand */
+.bg-art_title{
+  background: rgb(14, 113, 96) !important; 
 }
-.item-4 {
-  flex: 4;
-  overflow-y: auto;
+.text-art_title{
+  color: #f1e2ff !important;
 }
-.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width:43%;
+
+/* Message Left Hand */
+.bg-art_message{
+  background: rgb(8, 55, 11) !important; 
 }
-.title_side{
-  font-family: 'Playfair Display', serif;
-  font-size: 6vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(212, 212, 212);
-  color:rgb(43, 22, 0);
+.text-art_message{
+  color: #9473b3 !important;
+}
+
+/* art Styling */
+.proj_card{
+  width: 30vw;
+}
+.proj_img{
+  width:10vw !important;
   border-radius: 10px;
-  height: 15vh;
-  width:20vw;
-  padding: 2vh;
-  text-align: center;
-  
+  display: block;
+  margin-left: auto; 
+  margin-right: auto
+}
+.bg-proj_card_title{
+  background: rgb(110, 14, 113) !important; 
+}
+.bg-proj_card_desc{
+  background: rgb(206, 126, 207) !important; 
+}
+.text-proj_card_text{
+  color:#feffff
 }
 </style>
