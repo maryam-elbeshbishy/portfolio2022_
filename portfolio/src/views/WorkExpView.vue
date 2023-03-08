@@ -49,9 +49,11 @@
               <div class="q-mt-sm text-subtitle2 items">
                 {{ item.date }}
               </div>
-              <div v-for="p in item.description" :key="p" class="q-mt-sm text-body2 items">
+            <q-card-section class="bg-work_card_desc1">
+              <div v-for="p in item.description" :key="p" class="q-mt-sm text-body2 items ">
                 {{ p }}
               </div>
+            </q-card-section>
               <div class="q-mt-sm text-body2 items">
                 <b>Tools Used -</b> {{ item.tools }}
               </div>
@@ -176,6 +178,12 @@ export default {
 }
 .bg-work_card_bkg{
   background: rgb(23, 92, 77) !important; 
+}
+.bg-work_card_desc1{
+  margin-top: .5rem;
+  padding: 1rem !important;
+  background: rgb(128, 106, 189) !important; 
+  border-radius: 4vh !important;
 }
 .text-work_card_text{
   color:#feffff
